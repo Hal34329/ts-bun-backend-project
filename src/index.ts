@@ -1,7 +1,8 @@
 import express from "express";
+import { DEFAULTS } from "./config/defaults";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || DEFAULTS.PORT;
 
 // Middlewares
 app.use(express.json());
