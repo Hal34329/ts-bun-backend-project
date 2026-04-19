@@ -1,4 +1,13 @@
 {
+  "name": "new_project",
+  "version": "1.0.0",
+  "description": "Template for a future backend project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "dev": "bun --watch src/index.ts"
+  },
   "dependencies": {
     "cors": "^2.8.6",
     "drizzle-orm": "^0.45.2",
