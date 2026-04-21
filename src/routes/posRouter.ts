@@ -1,5 +1,5 @@
 import { Router } from "express";
-// import controller
+import { posController } from "../controllers/posController";
 
 export const posRouter = Router();
 
@@ -7,4 +7,5 @@ export const posRouter = Router();
 // posRouter.get("/warframes/:id", WarframeController.getCosmetics);
 // posRouter.get("/global-cosmetics", WarframeController.getAccesories);
 
-posRouter.get("/");
+// TODO: Añadir rutas y cambiar la función del controlador
+posRouter.get("/", posController.getFirst);
