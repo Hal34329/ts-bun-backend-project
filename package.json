@@ -8,10 +8,11 @@
     "lint": "eslint .",
     "dev": "bun --watch src/index.ts",
     "lint:fix": "eslint . --fix",
-    "db:generate": "bunx drizzle-kit generate",
-    "db:push": "bunx drizzle-kit push"
+    "generate": "bunx drizzle-kit generate",
+    "migrate": "bunx drizzle-kit migrate"
   },
   "dependencies": {
+    "better-sqlite3": "^12.9.0",
     "cors": "2.8.6",
     "drizzle-orm": "0.45.2",
     "express": "5.2.1",
