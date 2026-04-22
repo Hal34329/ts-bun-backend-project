@@ -3,14 +3,6 @@ import { items } from "../db/schemas/index";
 import { eq } from "drizzle-orm"; 
 import { type ItemsData } from "../models/itemsModel";
 
-// interface ItemsData {
-//     id: number,
-//     name: string,
-//     description: string | null,
-//     price: number,
-//     stock: number
-// }
-
 export class itemsService {
     static getAll = async (): Promise<ItemsData[]> => {
         return await db.select().from(items);
